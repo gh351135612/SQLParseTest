@@ -40,7 +40,6 @@ public class Parser {
 //        String sql22 = "select login.uid from login day_login left outer join (select uid from regusers where dt='20130101') day_regusers on day_login.uid=day_regusers.uid where day_login.dt='20130101' and day_regusers.uid is null";
         String sql23 = "select name from (select * from zpc left outer join def on zpc.id=def.id) d";
 
-
         List<String> list = new ArrayList<String>();
         list.add(sql1);
         list.add(sql2);
@@ -65,7 +64,6 @@ public class Parser {
 //        list.add(sql21);
 //        list.add(sql22);
         list.add(sql23);
-
 
         SQLParser parser = new SQLParser();
 //        StatementNode stmt = parser.parseStatement(
