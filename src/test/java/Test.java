@@ -7,6 +7,12 @@ public class Test {
 
 
 
+  public static void print(){
+   
+    int a = 1;
+    
+  }
+
 
 
 
